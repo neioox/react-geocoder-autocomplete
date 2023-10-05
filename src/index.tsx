@@ -161,7 +161,7 @@ export const GeoapifyGeocoderAutocomplete = ({
   useEffect(() => {
     if (initialized) {
       if (geocoderAutocomplete.current) {
-        geocoderAutocomplete.current.off("select", onSelect);
+   //     geocoderAutocomplete.current.off("select", onSelect);
         geocoderAutocomplete.current.off("suggestions", onSuggestions);
         geocoderAutocomplete.current.off("input", onUserInput);
         geocoderAutocomplete.current.off("close", onClose);
